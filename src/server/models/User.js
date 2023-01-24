@@ -1,6 +1,6 @@
 const {Schema, model }= require('mongoose');
 
-const date = () => `${new Date().getDate()}/${new Date().getMonth()+1}/${new Date().getFullYear()} ${new Date().getHours()}:${new Date().getMinutes()}`
+const date = () => `${new Date().toLocaleString()}`
 
 const user = new Schema({
     email: {type: String, required: true, unique: true},

@@ -11,6 +11,14 @@ router.post('/registration',
     check('password', 'The password length must be at least one symbol').isLength({min: 1})
   ],
   controller.registration);
+
+  router.post('/login',
+    [
+        check('email', 'Incorrect email').isEmail(),
+        check('password', 'Incorrect password').exists()
+    ],
+    controller.login);
+
 router.post('/login', controller.login);
 
 module.exports = router;
