@@ -7,8 +7,9 @@ const outputDirectory = 'dist';
 module.exports = {
   entry: './src/client/index.js',
   output: {
-    path: path.join(__dirname, outputDirectory),
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'dist'),
+    filename: 'main.js',
+    publicPath: ''
   },
   module: {
     rules: [

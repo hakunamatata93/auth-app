@@ -4,7 +4,7 @@ const mainRouter = require('./routes/mainRouter');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const PORT = process.env.PORT ||8080;
+const PORT = process.env.PORT || 8080;
 const corsOptions = {
     origin: "http://localhost:3000",
     credentials: true,
