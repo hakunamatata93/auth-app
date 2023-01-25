@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./app.scss";
 import React from "react";
 import { useRoutes } from "./routes.jsx";
 import { useAuth } from "./hooks/auth.hook.js";
